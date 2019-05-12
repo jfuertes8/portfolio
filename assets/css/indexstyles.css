@@ -370,6 +370,10 @@ ul {
 
   /*CONTACTO----------------------------------------------------------------------------------------------*/
 
+  .contact .section-subtitle {
+    margin-bottom: 40px;
+  }
+
   .contact-methods {
     padding-left: 30px;
     margin-top: 20px;
@@ -377,6 +381,7 @@ ul {
 
   .option {
     margin-top: 15px;
+    margin-bottom: 35px;
   }
 
   .option a {
