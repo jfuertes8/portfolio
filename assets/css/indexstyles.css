@@ -1,0 +1,395 @@
+/*RESET BEGINS*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*RESET ENDS*/
+
+/*TIPOGRAFÍA------------------------------------------------------------------------------------------------*/
+
+h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  width: 260px;
+}
+
+h2 {
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+p {font-size: 15px;}
+
+/*ESTILOS GENERALES-----------------------------------------------------------------------------------------*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  color: white;
+}
+
+/*HEADER (mi foto y el título introductorio + RRSS)-------------------------------------------------------------*/
+
+header {
+  position: relative;
+  background-image: url(../images/javi.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 22%;
+  width: 100%;
+  height: 665px;
+}
+
+.welcome-text {
+  position: absolute;
+  width: 250px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  width: 30%;
+  text-align: left;
+  margin-left: 0;
+  /* Set the hr color */
+  color: white; /* old IE */
+  background-color: white; /* Modern Browsers */
+}
+
+.welcome-text h2 {
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.fa-medium-m, .fa-linkedin, .fa-twitter {
+  margin-top: 25px;
+  margin-right: 50px;
+}
+
+.welcome-text a {
+  color: white;
+}
+
+/*Estilos para desplegar el menú hamburguesa-------------------------------------------------------------*/
+
+ul {
+  display: none;
+}
+
+.hamburguer {
+  float: right;
+  margin-top: 40px;
+  margin-right: 40px;
+  color: white;
+  font-size: 30px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0; /*Está en 0 porque aparece "cerrado". JavaScript cambiará este valor para desplegarlo*/
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.sidenav a:hover {
+  color: rgba(223, 41, 53, 1);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*DETALLE DE PROYECTOS------------------------------------------------------------------------------------*/
+
+.projects-space {
+  padding: 30px;
+  color: black;
+}
+
+.section-title h2 {
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.black {
+  border: none;
+  height: 3px;
+  width: 30%;
+  text-align: left;
+  margin-left: 0;
+  margin-top: 15px;
+  /* Set the hr color */
+  color: black; /* old IE */
+  background-color: black; /* Modern Browsers */
+}
+
+.project {
+  display: block;
+  height: 215px;
+  margin-top: 50px;
+}
+
+.project-title {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgba(223, 41, 53, 1);
+  text-align: left;
+}
+
+.project-text {
+  margin-top: 10px;
+  line-height: 20px;
+}
+
+.project1 {
+  background-image: url(../images/CafeOslodesktop.png);
+  background-size: 200% auto;
+  background-repeat: no-repeat;
+  background-position: 30% 20%;
+}
+
+.project2 {
+  background-image: url(../images/Domo.png);
+  background-size: cover;
+}
+
+.project3 {
+  background-image: url(../images/Smartcard.png);
+  background-size: cover;
+}
+
+/*FOOTER--------------------------------------------------------------------------------------------------*/
+
+footer {
+  height: 150px;
+  background-color: rgba(223, 41, 53, 1);
+}
+
+footer p {
+  padding: 30px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a .fa-medium-m {
+  margin-left: 30px;
+}
+
+/*MEDIA QUERIES TABLET------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 700px) and (max-width: 768px) {
+}
+
+/*MEDIA QUERIES DESKTOP------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1000px) {
+
+  /*Estilos generales*/
+
+  .section-title h2 { /*Encabezados de sección*/
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: rgba(223, 41, 53, 1);
+  } 
+
+  .section-title {margin-left: 30px;} /*Encabezado de sección + hr*/
+
+  .section-subtitle { /*Subtitulo <p> de sección*/
+    color: rgb(83, 83, 83);
+    line-height: 30px;
+    font-size: 20px;
+    width: 50%;
+  }
+
+  .section-subtitle a {
+    text-decoration: none;
+    color: rgba(223, 41, 53, 1);
+  }
+
+  /*Fin estilos generales*/
+
+  header {
+    height: 755px;
+  }
+
+  .welcome-text {
+    margin-left: 45px;
+    width: 400px;
+  }
+
+  .welcome-text h1 {
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-size: 80px;
+    height: 200px;
+    width: 350px;
+  }
+
+  .welcome-text h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  .fa-medium-m, .fa-linkedin, .fa-twitter {
+    margin-right: 75px;
+  }
+
+  .hamburguer {
+    display: none;
+  }
+
+  hr {
+    width: 15%;
+  }
+
+  /*Menú superior*/
+
+  ul {
+    display: block;
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    z-index: 1;
+  }
+
+  ul li {
+    float: right;
+    margin-left: 30px;
+    padding: 20px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.2s;
+    height: 40px;
+  }
+
+  /*ABOUT ME*/
+
+  .about-me-section {
+    background-image: url(../images/pamplona.png);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 30px;
+  }
+
+  .about-me-section h2, .about-me-section p { 
+    color: white;
+  }
+
+  .about-me-section .quote {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    width: 450px;
+    margin-bottom: 30px;
+  }
+
+  img {
+    margin-left: 30px;
+    margin-top: 30px;
+    padding-right: 20px;
+  }
+
+  /*Proyectos*/
+
+  .group-project1, .group-project2, .group-project3 {
+    float: left;
+    width: calc(100%/2 - 30px);
+    padding: 15px;
+    height: 400px;
+  }
+
+  .project {
+    height: 300px;
+  }
+
+  .clear {
+    clear: both;
+    height: 50px;
+  }
+
+}
