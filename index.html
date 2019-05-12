@@ -14,6 +14,7 @@
 
 <body>
 
+  <!--Menú para la visualización en mobile. En Desktop desaparece-->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#">About me</a>
@@ -22,9 +23,10 @@
     <a href="mailto:jfuertes8@gmail.com">Email me</a>
   </div>
 
+  <!--Menú para la visualización en Desktop. En mobile desaparece-->
   <nav role="navigation">
     <ul>
-      <li class="hvr-sweep-to-right"><a href="#">Contact</a></li>
+      <li class="hvr-sweep-to-right"><a href="#contact">Contact</a></li>
       <li class="hvr-sweep-to-right"><a href="#">My Design Methodology</a></li>
       <li class="hvr-sweep-to-right"><a href="#about-me">About me</a></li>
       <li class="hvr-sweep-to-right"><a href="#projects">My Work</a></li>
@@ -51,7 +53,7 @@
 
   <!--PROYECTOS-------------------------------------------------------------------------------------------------------->
 
-  <div class="projects-space" id="projects">
+  <div class="white-space" id="projects">
     <div class="section-title">
       <h2>MY DESIGN PROJECTS</h2>
       <p class="section-subtitle">Here I present the most interesting projects that I have worked on. The last two are
@@ -105,7 +107,7 @@
 
   <!--ABOUT ME--------------------------------------------------------------------------------------------------------->
 
-  <div class="about-me-section" id="about-me">
+  <div class="about-me-section colored-section" id="about-me">
       <div class="section-title">
           <h2>ABOUT ME...</h2>
           <p class="quote">"UX is the merchandising of the 21st century"</p>
@@ -119,19 +121,24 @@
         <a href="https://www.unco.edu/" target="_blank"><img src="assets/images/University-of-Northern-Colorado_Logo.png" width="150px" height="auto"></a>
   </div>
 
+  <!--CONTACT---------------------------------------------------------------------------------------------------------->
+
+  <div class="white-space" id="contact">
+    <div class="section-title">
+      <h2>CONTACT ME</h2>
+      <p class="section-subtitle">You can reach me by any of the following ways, or you can always find me in my social media. I am available to talk 24/7 (maybe not at night when I'm sleeping, but almost at any time :))</p>
+    </div>
+
+    <div class="contact-methods">
+      <div class="option">
+        <a href="tel:+34658545912" class="call-me">CALL ME</a>
+      </div>
+    </div>
+  </div>
   <!--MY DESIGN METODOLOGY--------------------------------------------------------------------------------------------->
 
   <div class="section methodology-section" id="about-me">
   </div>
-
-  <!--FOOTER--------------------------------------------------------------------------------------------------------->
-
-  <footer>
-    <p>Designed and coded by Javier Fuertes Fernández</p>
-    <a href="https://medium.com/@fuertesjavier1" target="_blank"><i class="fab fa-medium-m fa-2x"></i></a>
-    <a href="https://www.linkedin.com/in/fuertesjavier1" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-    <a href="https://twitter.com/fuertesjavier1" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-  </footer>
 
   <!--JAVASCRIPT para el menú lateral en versión móvil--------------------------------------------------------------->
   <script>
