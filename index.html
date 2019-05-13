@@ -136,7 +136,7 @@
         <a href="tel:+34658545912" class="call-me"><i class="fas fa-phone"></i>CALL ME</a>
       </div>
       <div class="option">
-        <a href="mailto:jfuertes8@gmail.com" class="call-me"><i class="far fa-envelope"></i>EMAIL ME</a>
+        <a href="mailto:jfuertes8@gmail.com" class="email-me"><i class="far fa-envelope"></i>EMAIL ME</a>
       </div>
     </div>
   
@@ -145,6 +145,11 @@
   <!--MY DESIGN METODOLOGY--------------------------------------------------------------------------------------------->
 
   <div class="section methodology-section" id="about-me">
+  </div>
+
+  <!--Back to top button-->
+  <div id="backtotop">
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i>Up to top</button> 
   </div>
 
   <!--JAVASCRIPT para el menú lateral en versión móvil--------------------------------------------------------------->
@@ -156,6 +161,24 @@
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      var threshold = 1000;
+      if (document.body.scrollTop > threshold || document.documentElement.scrollTop > threshold) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    } 
 
   </script>
 
