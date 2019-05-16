@@ -14,7 +14,8 @@
 
 <body>
 
-  <!--Menú para la visualización en mobile. En Desktop desaparece-->
+  <!--Menú para la visualización en mobile. En Desktop desaparece. Al hacer click en el botón, se ejecuta la función
+  de JS "closeNav()"-->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#">About me</a>
@@ -45,6 +46,7 @@
       <a href="https://twitter.com/fuertesjavier1" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
     </div>
 
+    <!--Al hacer click aquí, JS ejecuta la función "openNav()"-->
     <a href="#" onclick="openNav();">
       <span class="hamburguer">
         <i class="fas fa-bars"></i>
@@ -154,10 +156,12 @@
 
   <!--JAVASCRIPT para el menú lateral en versión móvil--------------------------------------------------------------->
   <script>
+    // Cuando el usuario hace click en el elemento con ID #mySideNav, JS cambia el parámetro "width" a 300px;
     function openNav() {
       document.getElementById("mySidenav").style.width = "300px";
     }
 
+    // Cuando el usuario hace click en el elemento con ID #mySideNav, JS cambia el parámetro "width" a 300px;
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
